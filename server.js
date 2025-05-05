@@ -1,4 +1,4 @@
-require("dotenv").config();
+zrequire("dotenv").config();
 const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
@@ -188,7 +188,7 @@ if (!chainOfEvents || chainOfEvents.trim() === "") missingFields.push("Chain of 
                                 ${subjectStatus === 'GREEN' ? `<p><strong>🆔 Incident ID:</strong> ${incidentId}</p>` : ''}
                                 <p><strong>Region:</strong> India</p>
                                 <p><strong> Reporter:</strong> OCC Team</p>
-                                <p><strong> Zoom Link:</strong> <a href=" https://olacabs.zoom.us/j/7387313438?pwd=a3JEOGZRQnRyV2lQakNnS2JmdUNnQT09" target="_blank" style="color: #007bff;">zoom link</a></p>
+                                <p><strong> Zoom Link:</strong> <a href=" " target="_blank" style="color: #007bff;">zoom link</a></p>
                                 <p><strong>‍Major Incident Managers:</strong> ${majorIncidentManagers}</p>
                                 <p><strong>Teams Engaged:</strong> ${formattedTeams}</p>
                                 <p><strong>Chain of Events:</strong> <br>${formattedChainOfEvents}</p>
